@@ -24,7 +24,7 @@ Version 1
 
 ## Authors
 
-* **Simon Williams** - *Initial work* - [PurpleBooth](https://github.com/SiWi88/Journal/edit/master/README.md)
+* **Simon Williams** - *Initial work* - (https://github.com/SiWi88/Journal)
 
 
 ## License

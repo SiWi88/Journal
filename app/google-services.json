@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1071622289759",
+    "firebase_url": "https://journalapp-ce840.firebaseio.com",
+    "project_id": "journalapp-ce840",
+    "storage_bucket": "journalapp-ce840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071622289759:android:20fbc684bab22e3b",
+        "android_client_info": {
+          "package_name": "syfy.co.za.journal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071622289759-7pl32vs15gvqb3bc5ss9as0o4sfqmv22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhR_df3BplHURLuyIWzgkv-8Ct2ESyreE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

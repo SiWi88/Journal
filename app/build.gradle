@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "syfy.co.za.journal"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'androidDebugKey'
+            keyPassword 'android'
+            storeFile file('/Users/nerdy/.android/debug.keystore')
+            storePassword('android')
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    implementation 'com.android.support:appcompat-v7:' + project.ANDROID_SUPPORT_VERSION
+    implementation 'com.android.support:recyclerview-v7:'  + project.ANDROID_SUPPORT_VERSION
+    implementation 'com.android.support:preference-v7:' + project.ANDROID_SUPPORT_VERSION
+    implementation 'com.android.support:design:' +  project.ANDROID_SUPPORT_VERSION
+
+    implementation 'com.android.support.constraint:constraint-layout:' + project.CONSTRAINT_LAYOUT_VERSION
+    implementation 'com.android.support:support-v4:' + project.ANDROID_SUPPORT_VERSION
+    implementation 'com.google.guava:guava:' + project.GUAVA_VERSION
+
+    implementation 'com.google.firebase:firebase-core:' + project.FIREBASE_CORE_VERSION
+    implementation 'com.google.firebase:firebase-auth:' + project.FIREBASE_AUTH_VERSION
+    implementation 'com.google.firebase:firebase-database:' + project.FIREBASE_DATABASE_VERSION
+
+    implementation 'com.firebase:firebase-jobdispatcher:' + project.FIREBASE_JOB_DISPATCHER_VERSION
+
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+
+
+    implementation 'android.arch.lifecycle:runtime:' + project.ARCH_VERSION
+    implementation 'android.arch.lifecycle:extensions:' + project.ARCH_VERSION
+    implementation 'android.arch.persistence.room:runtime:' + project.ARCH_VERSION
+
+    annotationProcessor 'android.arch.persistence.room:compiler:' + project.ARCH_VERSION
+    annotationProcessor 'android.arch.lifecycle:compiler:' + project.ARCH_VERSION
+
+    androidTestImplementation 'junit:junit:' + project.JUNIT_VERSION
+    androidTestImplementation 'com.android.support:support-annotations:' + project.ANDROID_SUPPORT_VERSION
+    androidTestImplementation 'com.android.support.test:runner:' + project.SUPPORT_TEST_VERSION
+    androidTestImplementation 'com.android.support.test:rules:' + project.SUPPORT_TEST_VERSION
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
